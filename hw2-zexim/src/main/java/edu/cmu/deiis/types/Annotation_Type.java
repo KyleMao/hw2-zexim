@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Wed Sep 11 13:44:28 EDT 2013
+ * Updated by JCasGen Fri Oct 10 12:45:51 EDT 2014
  * @generated */
 public class Annotation_Type extends org.apache.uima.jcas.tcas.Annotation_Type {
   /** @generated */
@@ -78,6 +78,30 @@ public class Annotation_Type extends org.apache.uima.jcas.tcas.Annotation_Type {
     ll_cas.ll_setDoubleValue(addr, casFeatCode_confidence, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_annotatedText;
+  /** @generated */
+  final int     casFeatCode_annotatedText;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getAnnotatedText(int addr) {
+        if (featOkTst && casFeat_annotatedText == null)
+      jcas.throwFeatMissing("annotatedText", "edu.cmu.deiis.types.Annotation");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_annotatedText);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setAnnotatedText(int addr, String v) {
+        if (featOkTst && casFeat_annotatedText == null)
+      jcas.throwFeatMissing("annotatedText", "edu.cmu.deiis.types.Annotation");
+    ll_cas.ll_setStringValue(addr, casFeatCode_annotatedText, v);}
+    
+  
 
 
 
@@ -94,6 +118,10 @@ public class Annotation_Type extends org.apache.uima.jcas.tcas.Annotation_Type {
  
     casFeat_confidence = jcas.getRequiredFeatureDE(casType, "confidence", "uima.cas.Double", featOkTst);
     casFeatCode_confidence  = (null == casFeat_confidence) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_confidence).getCode();
+
+ 
+    casFeat_annotatedText = jcas.getRequiredFeatureDE(casType, "annotatedText", "uima.cas.String", featOkTst);
+    casFeatCode_annotatedText  = (null == casFeat_annotatedText) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_annotatedText).getCode();
 
   }
 }
