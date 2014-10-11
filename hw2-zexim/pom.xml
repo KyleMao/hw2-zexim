@@ -112,6 +112,6 @@
 	<scm>
 		<connection>scm:git:git@github.com:KyleMao/hw2-zexim.git</connection>
 		<developerConnection>scm:git:git@github.com:KyleMao/hw2-zexim.git</developerConnection>
-		<tag>hw2-zexim-0.0.5</tag>
+		<tag>hw2-zexim-0.0.6</tag>
 	</scm>
 </project>
